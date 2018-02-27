@@ -1,8 +1,9 @@
-## Problem 2
+## Problem
 
-[Problem 2 - Triangles](https://www.hackerrank.com/contests/simply-sql/challenges/what-type-of-triangle)
+[Triangles](https://www.hackerrank.com/contests/simply-sql/challenges/what-type-of-triangle)
 
 ## Solution
+```
 SELECT IF( A + B <= C OR B + C <= A OR C + A <= B , 
               "Not A Triangle",
               IF(A = B AND C = A, 
@@ -11,3 +12,4 @@ SELECT IF( A + B <= C OR B + C <= A OR C + A <= B ,
                        "Isosceles", 
                        "Scalene"))) 
 FROM TRIANGLES
+```
